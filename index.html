@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EasyFlix</title>
+    <title>Video Embed Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="container">
-        <h1>EasyFlix</h1>
+        <h1>Video Embed Website</h1>
         <label for="type">Type:</label>
         <select id="type" onchange="showFields()">
             <option value="movie">Movie</option>
@@ -17,13 +17,13 @@
         </select>
 
         <div id="movieFields">
-            <label for="movieLink">IMDb Link:</label>
-            <input type="text" id="movieLink" placeholder="Enter IMDb link">
+            <label for="movieLink">Movie IMDb Link:</label>
+            <input type="text" id="movieLink" placeholder="Enter IMDb Link">
         </div>
 
         <div id="seriesFields" style="display:none;">
-            <label for="seriesLink">IMDb Link:</label>
-            <input type="text" id="seriesLink" placeholder="Enter IMDb link">
+            <label for="seriesLink">Series IMDb Link:</label>
+            <input type="text" id="seriesLink" placeholder="Enter IMDb Link">
             <br>
             <label for="season">Season:</label>
             <div class="input-group">
@@ -40,12 +40,11 @@
             </div>
         </div>
 
-        <button onclick="embedVideo()">Stream</button>
+        <button onclick="embedVideo()">Embed Video</button>
 
         <div id="videoContainer"></div>
     </div>
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
