@@ -16,14 +16,14 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: blue;
 }
 
 label {
     display: block;
     margin-top: 10px;
     margin-bottom: 5px;
-    color: #333;
+    color: blue;
 }
 
 input, select, button {
