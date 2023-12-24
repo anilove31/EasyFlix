@@ -6,7 +6,7 @@ function showFields() {
     if (type === "movie") {
         movieFields.style.display = "block";
         seriesFields.style.display = "none";
-    } else if {
+    } else if (type === "series") {
         movieFields.style.display = "none";
         seriesFields.style.display = "block";
     }
