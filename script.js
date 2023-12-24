@@ -1,7 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    showFields();
-});
-
 function showFields() {
     var type = document.getElementById("type").value;
     var movieFields = document.getElementById("movieFields");
@@ -15,6 +11,10 @@ function showFields() {
         seriesFields.style.display = "block";
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    showFields();
+});
 
 function adjustValue(field, amount) {
     var inputField = document.getElementById(field);
