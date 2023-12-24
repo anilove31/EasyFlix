@@ -11,39 +11,39 @@
 
     <div class="container">
         <h1>EasyFlix</h1>
-        <label for="type">Type:</label>
+        <label for="type">Content Type:</label>
         <select id="type" onchange="showFields()">
             <option value="movie">Movie</option>
             <option value="series">Series</option>
         </select>
 
         <div id="movieFields">
-            <label for="movieLink">IMDb Link:</label>
-            <input type="text" id="movieLink" placeholder="Enter IMDb Link">
+            <label for="movieLink">IMDb Movie Link:</label>
+            <input type="text" id="movieLink" placeholder="Enter IMDb Movie Link">
         </div>
 
         <div id="seriesFields" style="display:none;">
-            <label for="seriesLink">IMDb Link:</label>
-            <input type="text" id="seriesLink" placeholder="Enter IMDb Link">
+            <label for="seriesLink">IMDb Series Link:</label>
+            <input type="text" id="seriesLink" placeholder="Enter IMDb Series Link">
             <br>
             <label for="season">Season:</label>
             <div class="input-group">
                 <button onclick="adjustValue('season', -1)">-</button>
-                <input type="number" id="season" placeholder="Enter Season" min="1">
+                <input type="number" id="season" placeholder="Enter Season Number" min="1">
                 <button onclick="adjustValue('season', 1)">+</button>
             </div>
             <br>
             <label for="episode">Episode:</label>
             <div class="input-group">
                 <button onclick="adjustValue('episode', -1)">-</button>
-                <input type="number" id="episode" placeholder="Enter Episode" min="1">
+                <input type="number" id="episode" placeholder="Enter Episode Number" min="1">
                 <button onclick="adjustValue('episode', 1)">+</button>
             </div>
         </div>
 
-        <button onclick="embedVideo()">Stream</button>
+        <button onclick="embedVideo()">Watch Now</button>
 
-        <div id="videoContainer"></div>
+        <div id="videoContainer" class="video-container"></div>
     </div>
 
     <script src="script.js"></script>
