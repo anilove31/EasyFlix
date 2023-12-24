@@ -12,10 +12,6 @@ function showFields() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    showFields();
-});
-
 function adjustValue(field, amount) {
     var inputField = document.getElementById(field);
     var value = parseInt(inputField.value, 10) || 0;
