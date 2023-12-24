@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function() {
+    showFields();
+});
+
 function showFields() {
     var type = document.getElementById("type").value;
     var movieFields = document.getElementById("movieFields");
