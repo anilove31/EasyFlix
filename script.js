@@ -17,7 +17,7 @@ function adjustValue(field, amount) {
     var value = parseInt(inputField.value, 10) || 0;
     value += amount;
     if (value < 1) {
-        value = 1;
+        value = null;
     }
     inputField.value = value;
 }
