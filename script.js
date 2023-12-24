@@ -40,7 +40,7 @@ function embedVideo() {
             alert("Invalid movie link. Please enter a valid IMDb link.");
             return;
         }
-        videoContainer.innerHTML = `<iframe src="https://vidsrc.to/embed/tv/${id}" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>`;
+        videoContainer.innerHTML = `<iframe src="https://vidsrc.to/embed/movie/${id}" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>`;
     } else {
         var seriesLink = document.getElementById("seriesLink").value;
         id = extractIdFromLink(seriesLink);
