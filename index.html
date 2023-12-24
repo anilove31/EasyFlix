@@ -9,7 +9,6 @@
 <body>
 
     <div class="container">
-        <div class="readme" onclick="toggleReadme()">Readme</div>
         <h1>EasyFlix</h1>
         <label for="type">Type:</label>
         <select id="type" onchange="showFields()">
@@ -44,21 +43,6 @@
         <button onclick="embedVideo()">Stream</button>
 
         <div id="videoContainer"></div>
-    </div>
-
-    <div id="readmeContent" class="readme-content">
-        <h2>How to Use</h2>
-        <p>EasyFlix is a simple website that allows you to stream movies/series by entering its IMDb ID.</p>
-        <p><strong>For Movies:</strong></p>
-        <ul>
-            <li>Select "Movie" from the Type dropdown.</li>
-            <li>Enter the Movie ID (IMDb ID like 'tt2294629') and click "Stream".</li>
-        </ul>
-        <p><strong>For Series:</strong></p>
-        <ul>
-            <li>Select "Series" from the Type dropdown.</li>
-            <li>Enter the Series ID (IMDb ID like 'tt0108778'), Season, and Episode. Click "Stream".</li>
-        </ul>
     </div>
 
     <script src="scripts.js"></script>
