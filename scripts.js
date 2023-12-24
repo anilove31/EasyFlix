@@ -12,11 +12,6 @@ function showFields() {
     }
 }
 
-function toggleReadme() {
-    var readmeContent = document.getElementById("readmeContent");
-    readmeContent.style.display = (readmeContent.style.display === "none" || readmeContent.style.display === "") ? "block" : "none";
-}
-
 function adjustValue(field, amount) {
     var inputField = document.getElementById(field);
     var value = parseInt(inputField.value, 10) || 0;
