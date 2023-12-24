@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyFlix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="readme" onclick="toggleReadme()">Readme</div>
+        <h1>EasyFlix</h1>
+        <label for="type">Type:</label>
+        <select id="type" onchange="showFields()">
+            <option value="movie">Movie</option>
+            <option value="series">Series</option>
+        </select>
+
+        <div id="movieFields">
+            <label for="movieId">Movie ID:</label>
+            <input type="text" id="movieId" placeholder="Enter Movie ID">
+        </div>
+
+        <div id="seriesFields" style="display:none;">
+            <label for="seriesId">Series ID:</label>
+            <input type="text" id="seriesId" placeholder="Enter Series ID">
+            <br>
+            <label for="season">Season:</label>
+            <div class="input-group">
+                <button onclick="adjustValue('season', -1)">-</button>
+                <input type="number" id="season" placeholder="Enter Season" min="1">
+                <button onclick="adjustValue('season', 1)">+</button>
+            </div>
+            <br>
+            <label for="episode">Episode:</label>
+            <div class="input-group">
+                <button onclick="adjustValue('episode', -1)">-</button>
+                <input type="number" id="episode" placeholder="Enter Episode" min="1">
+                <button onclick="adjustValue('episode', 1)">+</button>
+            </div>
+        </div>
+
+        <button onclick="embedVideo()">Stream</button>
+
+        <div id="videoContainer"></div>
+    </div>
+
+    <div id="readmeContent" class="readme-content">
+        <h2>How to Use</h2>
+        <p>EasyFlix is a simple website that allows you to stream movies/series by entering its IMDb ID.</p>
+        <p><strong>For Movies:</strong></p>
+        <ul>
+            <li>Select "Movie" from the Type dropdown.</li>
+            <li>Enter the Movie ID (IMDb ID like 'tt2294629') and click "Stream".</li>
+        </ul>
+        <p><strong>For Series:</strong></p>
+        <ul>
+            <li>Select "Series" from the Type dropdown.</li>
+            <li>Enter the Series ID (IMDb ID like 'tt0108778'), Season, and Episode. Click "Stream".</li>
+        </ul>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
