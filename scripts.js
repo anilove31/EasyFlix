@@ -53,4 +53,3 @@ function embedVideo() {
         videoContainer.innerHTML = `<iframe src="https://vidsrc.to/embed/tv/${id}/${season}/${episode}" width="100%" height="400px" frameborder="0" allowfullscreen></iframe>`;
     }
 }
-
